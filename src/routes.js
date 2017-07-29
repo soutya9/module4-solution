@@ -10,16 +10,16 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
   // Redirect to home page if no other URL matches
   $urlRouterProvider.otherwise('/');
 
-  // *** Set up UI states ***
+  // UI states
   $stateProvider
 
-  // Home page
+  // Home 
   .state('home', {
     url: '/',
     templateUrl: 'src/home.template.html'
   })
 
-  // Categories page
+  // Categories
   .state('categories', {
     url: '/categories',
     templateUrl: 'src/categories.template.html',
@@ -33,7 +33,7 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
     }
   })
 
-  // Items page
+  // Items 
   .state('items', {
     url: '/items/{category}',
     templateUrl: 'src/items.template.html',
